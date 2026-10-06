@@ -6,7 +6,7 @@ import {
   ExternalLink, Search, Settings2, ShieldAlert, ShieldCheck, Smartphone, Sparkles, X,
 } from 'lucide-react';
 
-const API = '/api';
+const API = (import.meta.env.VITE_API_BASE_URL || 'https://hackathon-ga7j.onrender.com/api').replace(/\/$/, '');
 const navigation = [
   { id: 'overview', label: 'Overview', icon: LayoutDashboard },
   { id: 'social', label: 'Social monitoring', icon: Globe2 },
